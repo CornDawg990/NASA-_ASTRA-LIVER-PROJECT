@@ -53,10 +53,4 @@ tests/                    pytest suite
 ```
 #AI Assistance and Development Attribution
 
-Astra Liver was independently conceptualized and developed by Cornelius Ahumuza. I used Anthropic Claude as a supplementary coding assistant during the refinement of portions of the Python implementation, particularly for code review, debugging, and improving selected implementation details.
-
-The project concept, problem formulation, system requirements, scientific direction, and overall architecture were independently developed and directed by me. I personally reviewed, integrated, and tested the software and remain responsible for its implementation and reported results.
-
-AI assistance was used as a development aid rather than as a substitute for the underlying project ownership, scientific reasoning, or engineering responsibility.
-
-All simulated biological outputs and model benchmarks are identified as proof-of-concept results rather than experimentally validated findings.
+Astra Liver was conceptualized, architected, and developed by Cornelius Ahumuza. Anthropic's Claude was used strictly as a supplementary coding assistant for Python debugging, code review, and refining minor implementation details. All core problem formulation, scientific logic, system architecture, and testing were independently directed and verified by the author. All simulated biological outputs and model benchmarks are identified as proof-of-concept results rather than experimentally validated findings.
