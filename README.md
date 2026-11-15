@@ -28,20 +28,13 @@ First launch trains/loads the cell-imaging model (`liverchip/_bleb_model.joblib`
 | Digital Thread | light-time, on-board vs ground-in-loop decisions, downlink volume |
 | Benchmark & Methods | Monte-Carlo benchmark over all scenarios, equations, assumptions, limits |
 
-## Real NASA data (do this on your own machine)
 
-1. Open the **NASA data** tab → *Live NASA OSDR query* → fetch metadata for a mouse-liver study (the default accession `OSD-48` is only an example; check the study title in OSDR).
-2. From that study's page on osdr.nasa.gov download its *differential_expression.csv* (flight vs ground).
-3. *Upload OSDR differential-expression file* → scores four liver panels → **Apply to simulation**.
+## What is real vs simulated
 
-The upload parser auto-detects a gene-symbol column and a log2 fold-change column.
-
-## What is real vs simulated (say this out loud in the demo)
-
-**Real:** artifact rejection, event detection, Kalman twin, forecasting, segmentation, OSDR connector,
+Real: artifact rejection, event detection, Kalman twin, forecasting, segmentation, OSDR connector,
 gene-panel scoring with bootstrap CI, light-time maths, test-suite. MSL/RAD Mars-cruise dose rate (1.8 mSv/day).
 
-**Simulated:** all chip telemetry and images, the crew blood panel, and the biological response itself.
+Simulated: all chip telemetry and images, the crew blood panel, and the biological response itself.
 The twin's model family matches the simulator's, so reported accuracy is optimistic versus a real chip.
 The image classifier is trained on procedurally generated cells. The HSI→severity mapping is an explicit assumption.
 
